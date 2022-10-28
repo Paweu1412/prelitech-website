@@ -1,0 +1,778 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+header .navigation-background {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header .navigation-background #navigation-background-image {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(46%);
+    object-fit: cover;
+}
+
+header .navigation-background #triangle-bottomleft {
+    position: absolute;
+    height: 95vh;
+    border-bottom: 17vw solid rgb(255, 255, 255);
+    border-right: 50vw solid transparent;
+    z-index: 1;
+}
+
+header .navigation-background #triangle-bottomright {
+    position: absolute;
+    height: 95vh;
+    border-bottom: 17vw solid rgb(255, 255, 255);
+    border-left: 50vw solid transparent;
+    margin-left: 50vw;
+    z-index: 1;
+}
+
+header .navigation-background #rectangle {
+    position: absolute;
+    height: 16vh;
+    width: 100vw;
+    top: 94.9vh;
+    background: white;
+    z-index: 1;
+}
+
+header .navigation-background #bottom-line {
+    position: absolute;
+    height: 200px;
+    width: 10px;
+    top: 85vh;
+    left: calc(50vw - 5px);
+    border-radius: 5px;
+    background: black;
+    z-index: 1;
+}
+
+header .navigation-background .motivation-texts {
+    display: inline;
+    position: absolute;
+    padding-top: 20vh;
+    width: calc(100% - 40px);
+    text-align: center;
+    color: #d8d8d8dc;
+    list-style-type: none;
+    z-index: 0;
+}
+
+header .navigation-background #motivation-text-header {
+    height: 240px;
+    font-size: 200px;
+}
+
+header .navigation-background #motivation-text-footer {
+    font-size: 70px;
+}
+
+header nav #logo-image {
+    position: absolute;
+    width: 350px;
+    padding-top: 40px;
+    padding-left: 60px;
+    z-index: 5;
+}
+
+header nav .navigation-buttons a {
+    color: #d8d8d8b9;
+    text-decoration: none;
+    font-weight: 330;
+}
+
+header nav .navigation-buttons {
+    position: absolute;
+    width: 100%;
+    padding-left: calc(100% - 1000px);
+    padding-top: 40px;
+    font-size: 28px;
+    color: #d8d8d8b9;
+    z-index: 2;
+}
+
+header nav .navigation-buttons .buttons-wall {
+    display: inline;
+    font-size: 40px;
+    font-weight: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header nav .navigation-buttons .icon-buttons {
+    display: inline-block;
+}
+
+header nav .navigation-buttons .icon-buttons .language-icons {
+    height: 30px;
+    width: 50px;
+}
+
+header nav .navigation-buttons .icon-buttons #facebook-icon {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+header nav .navigation-buttons .icon-buttons #german-icon {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+header nav .navigation-buttons .icon-buttons #english-icon {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+header nav .navigation-buttons .icon-buttons #polish-icon {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+header nav .hamburger-navigation {
+    float: right;
+    display: none;
+}
+
+header .navigation-background .mobile-content {
+    display: none;
+}
+
+header .navigation-background .mobile-content a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+header .navigation-background .mobile-content #mobile-logo {
+    all: initial;
+    position: relative;
+    width: 120px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+header .navigation-background .mobile-navigation {
+    position: absolute;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.932);
+    height: 100vh;
+    left: calc(100% - 300px);
+    z-index: 1;
+    animation: main 0.3s;
+}
+
+header .navigation-background .mobile-navigation-buttons {
+    position: absolute;
+    list-style: none;
+    color: #d8d8d8;
+    text-align: center;
+    padding-left: calc(100% - 235px);
+    top: 160px;
+    font-size: 25px;
+    z-index: 2;
+}
+
+header .navigation-background .mobile-navigation-buttons li {
+    margin: 20px;
+}
+
+.navigation-background div.is-active {
+    display: block;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.hamburger {
+    padding: 25px 25px;
+}
+
+header .mobile-navigation-buttons .icon-buttons {
+    display: inline-block;
+    padding-top: calc(100vh - 750px);
+}
+
+header .mobile-navigation-buttons .icon-buttons .language-icons {
+    height: 20px;
+    width: 30px;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 110vh;
+    background-color: white;
+    z-index: 1;
+}
+
+main .about-us {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main .about-us h1 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+main .about-us p {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+main .about-us #first-paragraph {
+    width: 500px;
+}
+
+main .about-us #second-paragraph {
+    width: 500px;
+    vertical-align: text-bottom;
+}
+
+main .about-us button {
+    all: unset;
+    width: 180px;
+    height: 30px;
+    margin-right: 950px;
+    background-color: gray;
+    border-radius: 100px;
+    color: white;
+}
+
+main #triangle-bottomright {
+    position: absolute;
+    border-top: 20vw solid rgb(255, 255, 255);
+    border-right: 100vw solid transparent;
+    margin-right: 50vw;
+    z-index: 2;
+}
+
+main #offer-background {
+    position: absolute;
+    filter: brightness(46%);
+    height: calc(210% + 25vw);
+    width: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+main .offer-content {
+    padding-top: 20vw;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+main .offer-content .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+main .offer-content .grid-container .grid-item {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+main .offer-content .grid-container .moved-item {
+    padding-top: 200px;
+}
+
+main .offer-content .grid-container .grid-item h1 {
+    font-weight: 400;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+main .offer-content .grid-container .grid-item p {
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+}
+
+main .offer-content .grid-container .grid-item img {
+    -webkit-filter: drop-shadow(0px 0px 28px #000);
+    filter: drop-shadow(0px 0px 28px #000);
+    height: 150px;
+}
+
+main .support {
+    position: relative;
+    width: 100%;
+    top: 180%;
+}
+
+main .support-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+main .support-content .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+main .support-content .grid-container .grid-item {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main .support-content .grid-container .grid-item h1 {
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+main .support-content .grid-container .grid-item p {
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+main .support-content .grid-container .grid-item img {
+    -webkit-filter: drop-shadow(0px 0px 28px #000);
+    filter: drop-shadow(0px 0px 28px #000);
+    height: 150px;
+}
+
+main .support-content button {
+    all: unset;
+    width: 180px;
+    height: 30px;
+    margin-right: 950px;
+    background-color: gray;
+    border-radius: 100px;
+    color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 250px;
+    z-index: 1;
+}
+
+.grid-container-second .grid-item {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.grid-container-second .grid-item img {
+    width: 25vw;
+    height: 15vw;
+}
+
+main iframe {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    z-index: 1;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    background-color: rgb(240, 240, 240);
+    border-top: 2px solid black;
+}
+
+footer img {
+    padding-top: 20px;
+}
+
+footer p {
+    padding-top: 20px;
+    width: 70vw;
+}
+
+footer .footer-copyright {
+    position: relative;
+    top: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+}
+
+footer .icon-buttons img {
+    width: 35px;
+}
+
+@media only screen and (max-width: 1325px) {
+    main .about-us button {
+        margin-right: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 1365px) {
+    header nav .navigation-buttons .standard-navigation {
+        display: none;
+    }
+
+    header nav #logo-image {
+        display: none;
+    }
+
+    header nav .hamburger-navigation {
+        display: block;
+    }
+    
+    header nav .navigation-buttons {
+        padding-top: 0px;
+    }
+
+    main .offer-content .grid-container {
+        display: grid;
+        grid-template: 
+        "1fr 1fr"
+        "1fr 1fr";
+        padding: 10px;
+    }
+    
+    main .offer-content .grid-container .grid-item {
+        color: white;
+        padding: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    main .offer-content .grid-container .moved-item {
+        padding-top: 0px;
+    }
+    
+    main .offer-content .grid-container .grid-item h1 {
+        font-weight: 400;
+        font-size: 2vh;
+    }
+    
+    main .offer-content .grid-container .grid-item p {
+        font-size: 2vh;
+    }
+
+    main .offer-content .grid-container .grid-item img {
+        height: 11vh;
+    }
+
+    main .support {
+        top: 180vh;
+    }
+
+    main #offer-background {
+        height: 270vh;
+    }
+
+    main .support-content .grid-container .grid-item h1 {
+        font-size: 10vw;
+    }
+
+    main .support-content .grid-container .grid-item p {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    main .offer-content .grid-container .grid-item img {
+        height: 7vh;
+    }
+}
+
+
+@media only screen and (min-width: 1365px) {
+    header .navigation-background .mobile-content {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    header .navigation-background #triangle-bottomleft {
+        height: 85vh;
+    }
+
+    header .navigation-background #triangle-bottomright {
+        height: 85vh;
+    }
+
+    header .navigation-background #rectangle {
+        height: 16vh;
+        top: 84.9vh;
+    }
+
+    header .navigation-background #bottom-line {
+        top: 78vh;
+        height: 150px;
+    }
+
+    header .navigation-background .motivation-texts {
+        padding-top: 30vh;
+    }
+
+    header .navigation-background #motivation-text-header {
+        height: 26vw;
+        font-size: 22vw;
+    }
+
+    header .navigation-background #motivation-text-footer {
+        font-size: 8vw;
+    }
+
+    header nav #logo-image {
+        padding-top: 30px;
+        width: 40vh;
+    }
+
+    main .about-us p {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 4vw;
+    }
+
+    main .about-us #first-paragraph {
+        width: 80vw;
+    }
+
+    main .about-us #second-paragraph {
+        width: 80vw;
+    }
+    
+    main .offer-content .grid-container {
+        display: grid;
+        grid-template: 
+        "1fr"
+        "1fr"
+        "1fr"
+        "1fr";
+        padding: 10px;
+    }
+
+    main .offer-content .grid-container .grid-item p {
+        font-size: 2vh;
+    }
+
+    main #offer-background {
+        height: 440vh;
+
+    }
+
+    main .support {
+        top: 290vh;
+    }
+
+    main .support-content .grid-container .grid-item h1 {
+        font-size: 15vw;
+    }
+
+    main .support-content .grid-container .grid-item p {
+        font-size: 5vw;
+    }
+
+    .grid-container-second {
+        position: relative;
+        grid-template: 
+        "1fr 1fr"
+        "1fr 1fr";
+    }
+    
+    .grid-container-second .grid-item {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .grid-container-second .grid-item img {
+        width: 50vw;
+        height: 25vw;
+    }
+}
+
+@media only screen and (max-height: 630px) {
+    header .navigation-background #motivation-text-header {
+        height: 17vw;
+        font-size: 14vw;
+    }
+
+    header .navigation-background #motivation-text-footer {
+        font-size: 5vw;
+    }
+
+    header .navigation-background .mobile-navigation-buttons {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-height: 185px) {
+    header .navigation-background #triangle-bottomleft {
+        height: 95vh;
+    }
+
+    header .navigation-background #triangle-bottomright {
+        height: 95vh;
+    }
+
+    header .navigation-background #rectangle {
+        height: 15vh;
+        top: 94.9vh;
+    }
+}
+
+.support-popup {
+    width: 50vw;
+    height: 30vw;
+    background-color: rgba(250, 250, 250, 0.95);
+    border-radius: 2vw;
+}
+
+.support-window {
+    display: none;
+}
+
+.support-window.is-active {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 97vw;
+    justify-content: center;
+}
+
+.support-window img {
+    padding-top: 2vw;
+    padding-left: 2vw;
+}
+
+.support-window #team {
+    width: 25vw;
+    border-radius: 2vw;
+}
+
+.support-window #hall {
+    width: 21.5vw;
+}
+
+.support-window #flag {
+    width: 15vw;
+}
+
+.support-window #hall2 {
+    width: 15vw;
+    border-radius: 2vw;
+}
+
+.support-window #match {
+    height: 10.9vw;
+    width: 16.3vw;
+}
+
+.window-close { 
+    font-size: 2vw; 
+    position: relative; 
+    bottom: 18vw; 
+    left: 0.4vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .support-popup {
+        width: 95vw;
+        height: 55vw;
+        background-color: rgba(250, 250, 250, 0.95);
+        border-radius: 2vw;
+    }
+    
+    .window-close {
+        font-size: 8vw;
+    }
+
+    .support-window img {
+        padding-top: 2vw;
+        padding-left: 2vw;
+    }
+    
+    .support-window #team {
+        width: 55vw;
+        border-radius: 2vw;
+    }
+    
+    .support-window #hall {
+        width: 30vw;
+        height: 31.5vw;
+    }
+    
+    .support-window #flag {
+        width: 25vw;
+    }
+    
+    .support-window #hall2 {
+        width: 25vw;
+        border-radius: 2vw;
+    }
+    
+    .support-window #match {
+        height: 20.5vw;
+        width: auto;
+    }
+}
+
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+a {
+    color: black;
+}
+
+a:hover {
+    user-select: none;
+
+    color: rgba(37, 37, 37, 0.514);
+}
+
+.standard-navigation a.is-active {
+    color: white;
+}
+
+.footer-copyright a {
+    color: white;
+}
+
+.footer-copyright a:hover {
+    color: gray;
+}
